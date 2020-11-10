@@ -15,7 +15,7 @@ const Footer = () => {
                 src={Logo}
                 alt="logo"
                 width="40"
-                height="50"
+                height="40"
               />
             </Link>
             <h3 className="d-block mb-3 text-white">Lakers Creative</h3>
