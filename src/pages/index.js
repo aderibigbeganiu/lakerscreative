@@ -96,7 +96,7 @@ const Home = () => {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.268831519224!2d3.9073954144246628!3d7.435476713952857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039ed43c0f5926f%3A0x791f7aae1acb1cd8!2sLakers%20Creative!5e0!3m2!1sen!2sng!4v1604435092154!5m2!1sen!2sng"
             width="100%"
             height="300"
-            frameborder="0"
+            frameBorder="0"
           ></iframe>
         </Col>
         <Col className="pt-5">

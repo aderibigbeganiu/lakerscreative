@@ -43,9 +43,7 @@ const Blog = () => {
                 <Card.Body>
                   <Card.Title>{post.title}</Card.Title>
                   <Card.Text>
-                    <div
-                      dangerouslySetInnerHTML={{ __html: post.excerpt }}
-                    ></div>
+                    <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
                     <small>
                       Written by {post.author.name} on {post.date}
                     </small>

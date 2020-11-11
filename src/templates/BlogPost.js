@@ -4,14 +4,16 @@ import Layout from "../Components/Layout"
 
 const BlogPostTemplate = ({ data }) => (
   <Layout name={data.wordpressPost.title}>
-    <p>
+    <div className="col-12 d-flex justify-content-center">
+      <img
+        src={data.wordpressPost.featured_media.source_url}
+        alt={data.wordpressPost.title}
+        style={{ maxHeight: 450, width: 400 }}
+      />
+    </div>
+    <small>
       Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}
-    </p>
-    <img
-      src={data.wordpressPost.featured_media.source_url}
-      alt={data.wordpressPost.title}
-      style={{ maxHeight: 450 }}
-    />
+    </small>
     <div
       style={{ marginTop: 20 }}
       dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
