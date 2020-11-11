@@ -48,8 +48,6 @@ const Blog = () => {
                     ></span>
                     <small>
                       Written by {post.author.name} on {post.date}
-                      <br />
-                      count: {post.count}
                     </small>
                   </Card.Text>
                 </Card.Body>
