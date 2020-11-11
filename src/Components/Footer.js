@@ -37,63 +37,63 @@ const Footer = () => {
           <div className="col-12 col-md">
             <h5 className="text-uppercase text-white">Connect with us</h5>
             <ul className="list-unstyled text-small">
-              <Link
+              <a
                 className="text-white m-1"
-                to="https://www.facebook.com/lakerscreative/"
+                href="https://www.facebook.com/lakerscreative/"
                 target="blank"
               >
                 <li>
                   <i className="fab fa-facebook-f fa-lg"></i> Facebook
                 </li>
-              </Link>
-              <Link
+              </a>
+              <a
                 className="text-white m-1"
-                to="https://twitter.com/lakerscreative/"
+                href="https://twitter.com/lakerscreative/"
                 target="blank"
               >
                 <li>
                   <i className="fab fa-twitter fa-lg"></i> Twitter
                 </li>
-              </Link>
-              <Link
+              </a>
+              <a
                 className="text-white m-1"
-                to="https://instagram.com/lakerscreative/"
+                href="https://instagram.com/lakerscreative/"
                 target="blank"
               >
                 <li>
                   <i className="fab fa-instagram fa-lg"></i> Instagram
                 </li>
-              </Link>
-              <Link
+              </a>
+              <a
                 className="text-white m-1"
-                to="https://www.linkedin.com/company/lakers-creative/"
+                href="https://www.linkedin.com/company/lakers-creative/"
                 target="blank"
               >
                 <li>
                   <i className="fab fa-linkedin-in fa-lg"></i> Linkedin
                 </li>
-              </Link>
-              <Link
+              </a>
+              <a
                 className="text-white m-1"
-                to="https://wa.me/+2347047434853/"
+                href="https://wa.me/+2347047434853/"
                 target="blank"
               >
                 <li>
                   <i className="fab fa-whatsapp fa-lg"></i> Whatsapp
                 </li>
-              </Link>
+              </a>
             </ul>
           </div>
           <div className="col-12 col-md">
             <h5 className="text-uppercase text-white">Contact Us</h5>
             <ul className="list-unstyled text-small">
-              <Link
+              <a
                 className="text-white m-1"
                 href="tel:+2347047434853"
                 target="blank"
               >
                 <li>+2347047434853</li>
-              </Link>
+              </a>
               <a
                 className="text-white m-1"
                 href="mailto:info@lakerscreative.com"
@@ -101,13 +101,13 @@ const Footer = () => {
               >
                 <li>info@lakerscreative.com</li>
               </a>
-              <Link
+              <a
                 className="text-white m-1"
-                to="https://goo.gl/maps/wvynpGGm28codXdZ6"
+                href="https://goo.gl/maps/wvynpGGm28codXdZ6"
                 target="blank"
               >
                 <li>Shop 3 Block N Joke Plaza Bodija, Ibadan Oyo</li>
-              </Link>
+              </a>
             </ul>
           </div>
         </div>

@@ -1,12 +1,65 @@
 import React from "react"
 import Layout from "../Components/Layout"
+import { graphql, Link, useStaticQuery } from "gatsby"
+import { Card, CardDeck } from "react-bootstrap"
 
-const blog = () => {
+const Blog = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allWordpressPost {
+        nodes {
+          id
+          title
+          slug
+          excerpt
+          content
+          date(formatString: "MMMM DD, YYYY")
+          featured_media {
+            source_url
+          }
+          author {
+            name
+          }
+        }
+      }
+    }
+  `)
   return (
     <Layout name="Blog">
-      <h1>Blog</h1>
+      {data.allWordpressPost.nodes.length >= 1 ? (
+        <CardDeck>
+          {data.allWordpressPost.nodes.map(post => (
+            <Card key={post.id}>
+              <Link
+                to={post.slug}
+                style={{ textDecoration: "none", color: "#000000" }}
+              >
+                <Card.Img
+                  variant="left"
+                  src={post.featured_media.source_url}
+                  height="150"
+                  width="100%"
+                />
+                <Card.Body>
+                  <Card.Title>{post.title}</Card.Title>
+                  <Card.Text>
+                    <span dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+                    <small>
+                      Written by {post.author.name} on {post.date}
+                      <br />
+                      count: {post.count}
+                    </small>
+                  </Card.Text>
+                </Card.Body>
+              </Link>
+            </Card>
+          ))}
+        </CardDeck>
+      ) : (
+        ""
+      )}
     </Layout>
   )
 }
 
-export default blog
+export default Blog
