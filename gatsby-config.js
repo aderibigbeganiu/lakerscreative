@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: "Lakers Creative",
     author: "Adeleke",
-    siteUrl: "lakerscreative.netlify.com",
+    siteUrl: "https://lakerscreative.netlify.com",
   },
   plugins: [
     "gatsby-plugin-sass",
