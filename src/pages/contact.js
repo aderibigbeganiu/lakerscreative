@@ -6,7 +6,7 @@ const contact = () => {
   return (
     <Layout name="Contact">
       <Row>
-        <Col className="p-5 bg-secondary">
+        <Col md={6}>
           <form>
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -34,7 +34,7 @@ const contact = () => {
             </div>
           </form>
         </Col>
-        <Col>
+        <Col md={6}>
           <div className="m-5">Hi</div>
         </Col>
       </Row>
