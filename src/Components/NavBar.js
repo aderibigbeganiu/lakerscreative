@@ -36,13 +36,13 @@ const NavBar = () => {
               >
                 What We Do
               </Link>
-              <Link
+              {/* <Link
                 className={navStyle.navItem}
                 activeClassName={navStyle.activeNavItem}
                 to="/our-team"
               >
                 Our Team
-              </Link>
+              </Link> */}
               <Link
                 className={navStyle.navItem}
                 activeClassName={navStyle.activeNavItem}

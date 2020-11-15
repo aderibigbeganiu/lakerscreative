@@ -17,10 +17,11 @@ const HomeLayout = props => {
         <span className={homeLayoutStyle.heroDisplay}>
           <h1 className={homeLayoutStyle.heroTitle}>Lakers Creative</h1>
           <p className={homeLayoutStyle.heroText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
-            sit et lectus cum. Lectus tristique malesuada nibh nec morbi
-            tristique. Imperdiet tempus amet, congue arcu amet at enim nulla
-            arcu. Eget morbi tempus sollicitudin amet urna nisi.
+            Lakers Creative is the team that is going to help you achieve your
+            goals.
+            <br />
+            We help Businesses and set up Organizations to execute and promote
+            their customer experiences using innovation.
           </p>
           <p className="text-center">
             <Link to="/contact">

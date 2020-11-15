@@ -26,8 +26,8 @@ const Home = () => {
           <Card.Body className="text-center">
             <Card.Title>Detailed</Card.Title>
             <Card.Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit
-              nulla.
+              We build you a platform that tells all your infomation in detail
+              to your potential client.
             </Card.Text>
           </Card.Body>
         </Card>
@@ -71,8 +71,8 @@ const Home = () => {
           </Card.Body>
         </Card>
       </CardDeck>
-      <h1 className={indexStyle.heading1Text}>Our working process</h1>
-      <Row className="pt-5 ">
+      {/* <h1 className={indexStyle.heading1Text}>Our working process</h1> */}
+      {/* <Row className="pt-5 ">
         <Col className="">
           <span className={indexStyle.RoundCard}>
             <span className={indexStyle.text}>1</span>
@@ -88,7 +88,7 @@ const Home = () => {
             <span className={indexStyle.text}>3</span>
           </span>
         </Col>
-      </Row>
+      </Row> */}
       <Row xs={1} md={2} className="py-5">
         <Col>
           <iframe
