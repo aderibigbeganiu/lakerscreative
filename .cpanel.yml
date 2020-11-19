@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/lakeuner/kappohotel.com
+    - export DEPLOYPATH=/home/lakeuner/public_html
     - /bin/cp -R public/* $DEPLOYPATH
