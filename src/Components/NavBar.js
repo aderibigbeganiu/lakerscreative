@@ -29,13 +29,13 @@ const NavBar = () => {
               >
                 About Us
               </Link>
-              <Link
+              {/* <Link
                 className={navStyle.navItem}
                 activeClassName={navStyle.activeNavItem}
                 to="/services"
               >
                 What We Do
-              </Link>
+              </Link> */}
               {/* <Link
                 className={navStyle.navItem}
                 activeClassName={navStyle.activeNavItem}
@@ -89,11 +89,11 @@ const NavBar = () => {
                   About Us
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/services">
                   What We Do
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to="/our-team">
                   Our Team

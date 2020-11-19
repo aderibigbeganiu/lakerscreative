@@ -23,6 +23,7 @@
     "gatsby-plugin-sharp": "^2.7.1",
     "gatsby-plugin-sitemap": "^2.5.1",
     "gatsby-source-filesystem": "^2.3.37",
+    "gatsby-source-rest-api": "^0.2.3",
     "gatsby-source-wordpress": "^3.4.2",
     "gatsby-transformer-remark": "^2.8.47",
     "gatsby-transformer-sharp": "^2.5.21",
@@ -30,7 +31,8 @@
     "path": "^0.12.7",
     "react": "^16.12.0",
     "react-bootstrap": "^1.4.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "prettier": "2.1.2"

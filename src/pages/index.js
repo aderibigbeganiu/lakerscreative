@@ -26,8 +26,8 @@ const Home = () => {
           <Card.Body className="text-center">
             <Card.Title>Detailed</Card.Title>
             <Card.Text>
-              We build you a platform that tells all your infomation in detail
-              to your potential client.
+              We elaborate in details how to apply technological innovation that
+              will rapidly increase your business growth
             </Card.Text>
           </Card.Body>
         </Card>
@@ -46,8 +46,9 @@ const Home = () => {
           <Card.Body className="text-center">
             <Card.Title>Proffesionality</Card.Title>
             <Card.Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit
-              nulla.
+              We are certified and committed to delivering technological
+              materials and solutions that will in place boost your business and
+              customer feed back.
             </Card.Text>
           </Card.Body>
         </Card>
@@ -65,12 +66,45 @@ const Home = () => {
           <Card.Body className="text-center">
             <Card.Title>Customers Satisfaction</Card.Title>
             <Card.Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit
-              nulla.
+              Our team is flexible and available 24/7 to respond to your call.
             </Card.Text>
           </Card.Body>
         </Card>
       </CardDeck>
+
+      <h1 className={indexStyle.heading1Text}>Our Services</h1>
+      <Row className="p-5">
+        <Col>
+          <div>
+            <iframe
+              title="web-development"
+              src="https://gifer.com/embed/6ELx"
+              width="50"
+              height="50"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div>Web Development</div>
+        </Col>
+        <Col>
+          <div>Mobile Development</div>
+        </Col>
+        <Col>
+          <div>UI/UX Design</div>
+        </Col>
+      </Row>
+      <Row className="p-5">
+        <Col>
+          <div>Graphic Design</div>
+        </Col>
+        <Col>
+          <div>Digital Maketing</div>
+        </Col>
+        <Col>
+          <div>Business Branding</div>
+        </Col>
+      </Row>
       {/* <h1 className={indexStyle.heading1Text}>Our working process</h1> */}
       {/* <Row className="pt-5 ">
         <Col className="">

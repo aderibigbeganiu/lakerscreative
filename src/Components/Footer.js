@@ -22,91 +22,108 @@ const Footer = () => {
         <div className="col-12 col-md">
           <h5 className="text-uppercase text-white">Useful Links</h5>
           <ul className="list-unstyled text-small">
-            <Link className="text-white m-1" to="/about">
-              <li>About</li>
-            </Link>
-            <Link className="text-white m-1" to="/services">
-              <li>Services</li>
-            </Link>
-            <Link className="text-white m-1" to="/contact">
-              <li>Contact</li>
-            </Link>
+            <li className={footerStyle.list}>
+              <Link className={footerStyle.link} to="/about">
+                About
+              </Link>
+            </li>
+            <li className={footerStyle.list}>
+              <Link className={footerStyle.link} to="/services">
+                Services
+              </Link>
+            </li>
+            <li className={footerStyle.list}>
+              <Link className={footerStyle.link} to="/contact">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="col-12 col-md">
           <h5 className="text-uppercase text-white">Connect with us</h5>
           <ul className="list-unstyled text-small">
-            <a
-              className="text-white m-1"
-              href="https://www.facebook.com/lakerscreative/"
-              target="blank"
-            >
-              <li>
-                <i className="fab fa-facebook-f fa-lg"></i> Facebook
-              </li>
-            </a>
-            <a
-              className="text-white m-1"
-              href="https://twitter.com/lakerscreative/"
-              target="blank"
-            >
-              <li>
-                <i className="fab fa-twitter fa-lg"></i> Twitter
-              </li>
-            </a>
-            <a
-              className="text-white m-1"
-              href="https://instagram.com/lakerscreative/"
-              target="blank"
-            >
-              <li>
-                <i className="fab fa-instagram fa-lg"></i> Instagram
-              </li>
-            </a>
-            <a
-              className="text-white m-1"
-              href="https://www.linkedin.com/company/lakers-creative/"
-              target="blank"
-            >
-              <li>
-                <i className="fab fa-linkedin-in fa-lg"></i> Linkedin
-              </li>
-            </a>
-            <a
-              className="text-white m-1"
-              href="https://wa.me/+2347047434853/"
-              target="blank"
-            >
-              <li>
-                <i className="fab fa-whatsapp fa-lg"></i> Whatsapp
-              </li>
-            </a>
+            <li className={footerStyle.list}>
+              <a
+                className={footerStyle.link}
+                href="https://www.facebook.com/lakerscreative/"
+                target="blank"
+              >
+                {/* <i className="fab fa-facebook-f fa-lg"></i>  */}
+                Facebook
+              </a>
+            </li>
+            <li className={footerStyle.list}>
+              <a
+                className={footerStyle.link}
+                href="https://twitter.com/lakerscreative/"
+                target="blank"
+              >
+                {/* <i className="fab fa-twitter fa-lg"></i>  */}
+                Twitter
+              </a>
+            </li>
+            <li className={footerStyle.list}>
+              <a
+                className={footerStyle.link}
+                href="https://instagram.com/lakerscreative/"
+                target="blank"
+              >
+                {/* <i className="fab fa-instagram fa-lg"></i>  */}
+                Instagram
+              </a>
+            </li>
+            <li className={footerStyle.list}>
+              <a
+                className={footerStyle.link}
+                href="https://www.linkedin.com/company/lakers-creative/"
+                target="blank"
+              >
+                {/* <i className="fab fa-linkedin-in fa-lg"></i>  */}
+                Linkedin
+              </a>
+            </li>
+            <li className={footerStyle.list}>
+              <a
+                className={footerStyle.link}
+                href="https://wa.me/+2347047434853/"
+                target="blank"
+              >
+                {/* <i className="fab fa-whatsapp fa-lg"></i>  */}
+                Whatsapp
+              </a>
+            </li>
           </ul>
         </div>
         <div className="col-12 col-md">
           <h5 className="text-uppercase text-white">Contact Us</h5>
           <ul className="list-unstyled text-small">
-            <a
-              className="text-white m-1"
-              href="tel:+2347047434853"
-              target="blank"
-            >
-              <li>+2347047434853</li>
-            </a>
-            <a
-              className="text-white m-1"
-              href="mailto:info@lakerscreative.com"
-              target="blank"
-            >
-              <li>info@lakerscreative.com</li>
-            </a>
-            <a
-              className="text-white m-1"
-              href="https://goo.gl/maps/wvynpGGm28codXdZ6"
-              target="blank"
-            >
-              <li>Shop 3 Block N Joke Plaza Bodija, Ibadan Oyo</li>
-            </a>
+            <li className={footerStyle.list}>
+              <a
+                className={footerStyle.link}
+                href="tel:+2347047434853"
+                target="blank"
+              >
+                +2347047434853
+              </a>
+            </li>
+            <li className={footerStyle.list}>
+              <a
+                className={footerStyle.link}
+                href="mailto:info@lakerscreative.com"
+                target="blank"
+              >
+                info@lakerscreative.com
+              </a>
+            </li>
+            <li className={footerStyle.list}>
+              <a
+                className={footerStyle.link}
+                href="https://goo.gl/maps/wvynpGGm28codXdZ6"
+                target="blank"
+              >
+                Shop 3 Block N Joke Plaza Bodija, Ibadan Oyo
+              </a>
+            </li>
           </ul>
         </div>
       </div>
