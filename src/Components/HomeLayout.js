@@ -16,13 +16,13 @@ const HomeLayout = props => {
     <div className={homeLayoutStyle.container}>
       <GatsbySeo
         title="Home"
-        titleTemplate="%s • Lakers Creative"
+        titleTemplate="%s • LakersCreative"
         description="Lakers Creative is the team that is going to help you achieve your technological goals. We are here to help Businesses and Organisations to execute and promote their customer experience using innovative tech solutions."
         canonical="https://www.lakerscreative.com/"
         openGraph={{
           type: "website",
           url: "https://www.lakerscreative.com/",
-          title: "Lakers Creative",
+          title: "LAKERS CREATIVE",
           description:
             "Lakers Creative is the team that is going to help you achieve your technological goals. We are here to help Businesses and Organisations to execute and promote their customer experience using innovative tech solutions.",
           images: [
