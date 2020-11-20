@@ -67,6 +67,22 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-next-seo",
+      options: {
+        openGraph: {
+          type: "website",
+          locale: "en_IE",
+          url: "https://www.lakerscreative.com/",
+          site_name: "LakersCreative",
+        },
+        twitter: {
+          handle: "@lakerscreative",
+          site: "@lakerscreative",
+          cardType: "summary_large_image",
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',

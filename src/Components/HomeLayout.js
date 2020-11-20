@@ -6,6 +6,7 @@ import { Button, Jumbotron } from "react-bootstrap"
 import homeLayoutStyle from "./homelayout.module.scss"
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const HomeLayout = props => {
   useEffect(() => {
@@ -13,6 +14,25 @@ const HomeLayout = props => {
   })
   return (
     <div className={homeLayoutStyle.container}>
+      <GatsbySeo
+        title="Home"
+        titleTemplate="%s • Lakers Creative"
+        description="Lakers Creative is the team that is going to help you achieve your technological goals. We are here to help Businesses and Organisations to execute and promote their customer experience using innovative tech solutions."
+        canonical="https://www.lakerscreative.com/"
+        openGraph={{
+          type: "website",
+          url: "https://www.lakerscreative.com/",
+          title: "Lakers Creative",
+          description:
+            "Lakers Creative is the team that is going to help you achieve your technological goals. We are here to help Businesses and Organisations to execute and promote their customer experience using innovative tech solutions.",
+          images: [
+            {
+              url: "https://lakerscreative.com/color-logo.png",
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
+      />
       <Helmet>
         <link
           rel="stylesheet"

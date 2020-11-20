@@ -1,8 +1,10 @@
 import React from "react"
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const Page404 = () => {
   return (
     <div class="main">
+      <GatsbySeo nofollow={true} />
       <div class="card">
         <div class="header">
           <h1>Page Not Found</h1>
