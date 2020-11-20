@@ -18,8 +18,8 @@ const about = () => {
         <h2 className="mt-3">Certification</h2>
         <p>
           We are certified and committed to delivering technological materials
-          and solutions that will in place boost your business and customer feed
-          back.
+          and solutions that will in place boost your business and customer
+          feedback.
         </p>
         <h2>Location</h2>
         <p>
@@ -31,7 +31,7 @@ const about = () => {
           Why? We believe what is worth doing at all is worth doing well and
           that is why We give you full attention to understand your needs We
           deliver right on time upon the agreed time frame We are affordable and
-          budget friendly
+          budget-friendly
         </p>
       </div>
     </Layout>

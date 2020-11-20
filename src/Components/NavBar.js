@@ -74,6 +74,7 @@ const NavBar = () => {
             aria-controls="navbarCollapse"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style={{ outline: "none" }}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
