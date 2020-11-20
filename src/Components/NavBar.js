@@ -25,30 +25,16 @@ const NavBar = () => {
               <Link
                 className={navStyle.navItem}
                 activeClassName={navStyle.activeNavItem}
-                to="/about"
-              >
-                About Us
-              </Link>
-              {/* <Link
-                className={navStyle.navItem}
-                activeClassName={navStyle.activeNavItem}
-                to="/services"
-              >
-                What We Do
-              </Link> */}
-              {/* <Link
-                className={navStyle.navItem}
-                activeClassName={navStyle.activeNavItem}
-                to="/our-team"
-              >
-                Our Team
-              </Link> */}
-              <Link
-                className={navStyle.navItem}
-                activeClassName={navStyle.activeNavItem}
                 to="/blog"
               >
                 Blog
+              </Link>
+              <Link
+                className={navStyle.navItem}
+                activeClassName={navStyle.activeNavItem}
+                to="/about"
+              >
+                About Us
               </Link>
               <Link
                 className={navStyle.navItem}
@@ -57,6 +43,20 @@ const NavBar = () => {
               >
                 Contact Us
               </Link>
+              {/* <Link
+                  className={navStyle.navItem}
+                  activeClassName={navStyle.activeNavItem}
+                  to="/services"
+                >
+                What We Do
+              </Link> */}
+              {/* <Link
+                  className={navStyle.navItem}
+                  activeClassName={navStyle.activeNavItem}
+                  to="/our-team"
+                  >
+                  Our Team
+                </Link> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -85,23 +85,13 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About Us
-                </Link>
-              </li>
-              {/* <li className="nav-item">
-                <Link className="nav-link" to="/services">
-                  What We Do
-                </Link>
-              </li> */}
-              <li className="nav-item">
-                <Link className="nav-link" to="/our-team">
-                  Our Team
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link" to="/blog">
                   Blog
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
+                  About Us
                 </Link>
               </li>
               <li className="nav-item">
@@ -109,6 +99,16 @@ const NavBar = () => {
                   Contact Us
                 </Link>
               </li>
+              {/* <li className="nav-item">
+                <Link className="nav-link" to="/services">
+                  What We Do
+                </Link>
+              </li> */}
+              {/* <li className="nav-item">
+                <Link className="nav-link" to="/our-team">
+                  Our Team
+                </Link>
+              </li> */}
             </ul>
           </div>
         </nav>

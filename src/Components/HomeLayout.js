@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { Button, Jumbotron } from "react-bootstrap"
 import homeLayoutStyle from "./homelayout.module.scss"
 import { Link } from "gatsby"
+import Helmet from "react-helmet"
 
 const HomeLayout = props => {
   useEffect(() => {
@@ -12,6 +13,14 @@ const HomeLayout = props => {
   })
   return (
     <div className={homeLayoutStyle.container}>
+      <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous"
+        />
+      </Helmet>
       <Jumbotron className={homeLayoutStyle.homelayoutJumbotron}>
         <NavBar />
         <span className={homeLayoutStyle.heroDisplay}>

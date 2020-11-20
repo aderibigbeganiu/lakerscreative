@@ -23,18 +23,23 @@ const Footer = () => {
           <h5 className="text-uppercase text-white">Useful Links</h5>
           <ul className="list-unstyled text-small">
             <li className={footerStyle.list}>
-              <Link className={footerStyle.link} to="/about">
-                About
+              <Link className={footerStyle.link} to="/">
+                Home
               </Link>
             </li>
             <li className={footerStyle.list}>
-              <Link className={footerStyle.link} to="/services">
-                Services
+              <Link className={footerStyle.link} to="/blog">
+                Blog
+              </Link>
+            </li>
+            <li className={footerStyle.list}>
+              <Link className={footerStyle.link} to="/about">
+                About Us
               </Link>
             </li>
             <li className={footerStyle.list}>
               <Link className={footerStyle.link} to="/contact">
-                Contact
+                Contact Us
               </Link>
             </li>
           </ul>

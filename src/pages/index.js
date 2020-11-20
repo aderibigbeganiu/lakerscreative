@@ -73,35 +73,43 @@ const Home = () => {
       </CardDeck>
 
       <h1 className={indexStyle.heading1Text}>Our Services</h1>
-      <Row className="p-5">
-        <Col>
-          <div>
-            <iframe
-              title="web-development"
-              src="https://gifer.com/embed/6ELx"
-              width="50"
-              height="50"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
+      <Row className="text-center">
+        <Col md={4} className="p-5">
+          <h1>
+            <i class="fas fa-globe-africa text-center text-primary"></i>
+          </h1>
           <div>Web Development</div>
         </Col>
-        <Col>
+        <Col md={4} className="p-5">
+          <h1>
+            <i class="fas fa-mobile-alt text-center text-primary"></i>
+          </h1>
           <div>Mobile Development</div>
         </Col>
-        <Col>
+        <Col md={4} className="p-5">
+          <h1>
+            <i class="fab fa-figma text-center text-primary"></i>
+          </h1>
           <div>UI/UX Design</div>
         </Col>
       </Row>
-      <Row className="p-5">
-        <Col>
+      <Row className="text-center">
+        <Col md={4} className="p-5">
+          <h1>
+            <i class="fas fa-palette text-center text-primary"></i>
+          </h1>
           <div>Graphic Design</div>
         </Col>
-        <Col>
+        <Col md={4} className="p-5">
+          <h1>
+            <i class="fas fa-bullhorn text-center text-primary"></i>
+          </h1>
           <div>Digital Maketing</div>
         </Col>
-        <Col>
+        <Col md={4} className="p-5">
+          <h1>
+            <i class="fas fa-store text-center text-primary"></i>
+          </h1>
           <div>Business Branding</div>
         </Col>
       </Row>
@@ -123,6 +131,7 @@ const Home = () => {
           </span>
         </Col>
       </Row> */}
+      <h1 className={indexStyle.heading1Text}>Our Location</h1>
       <Row xs={1} md={2} className="py-5">
         <Col>
           <iframe
@@ -134,7 +143,6 @@ const Home = () => {
           ></iframe>
         </Col>
         <Col className="pt-5">
-          <h1 className={indexStyle.heading1Text}>Our Location</h1>
           <p className="text-center">
             Shop 3, Block N, Joke Plaza, Bodija, Ibadan Oyo State, Nigeria.
           </p>
