@@ -31,7 +31,7 @@ const about = () => {
           Why? We believe what is worth doing at all is worth doing well and
           that is why We give you full attention to understand your needs We
           deliver right on time upon the agreed time frame We are affordable and
-          budget-friendly
+          budget-friendly.
         </p>
       </div>
     </Layout>

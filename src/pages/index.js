@@ -76,19 +76,19 @@ const Home = () => {
       <Row className="text-center">
         <Col md={4} className="p-5">
           <h1>
-            <i class="fas fa-globe-africa text-center text-primary"></i>
+            <i className="fas fa-globe-africa text-center text-primary"></i>
           </h1>
           <div>Web Development</div>
         </Col>
         <Col md={4} className="p-5">
           <h1>
-            <i class="fas fa-mobile-alt text-center text-primary"></i>
+            <i className="fas fa-mobile-alt text-center text-primary"></i>
           </h1>
           <div>Mobile Development</div>
         </Col>
         <Col md={4} className="p-5">
           <h1>
-            <i class="fab fa-figma text-center text-primary"></i>
+            <i className="fab fa-figma text-center text-primary"></i>
           </h1>
           <div>UI/UX Design</div>
         </Col>
@@ -96,19 +96,19 @@ const Home = () => {
       <Row className="text-center">
         <Col md={4} className="p-5">
           <h1>
-            <i class="fas fa-palette text-center text-primary"></i>
+            <i className="fas fa-palette text-center text-primary"></i>
           </h1>
           <div>Graphic Design</div>
         </Col>
         <Col md={4} className="p-5">
           <h1>
-            <i class="fas fa-bullhorn text-center text-primary"></i>
+            <i className="fas fa-bullhorn text-center text-primary"></i>
           </h1>
           <div>Digital Maketing</div>
         </Col>
         <Col md={4} className="p-5">
           <h1>
-            <i class="fas fa-store text-center text-primary"></i>
+            <i className="fas fa-store text-center text-primary"></i>
           </h1>
           <div>Business Branding</div>
         </Col>

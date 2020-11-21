@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: "Lakers Creative",
     author: "Adeleke",
-    siteUrl: "https://lakerscreative.netlify.com",
+    siteUrl: "https://lakerscreative.com",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -72,6 +72,7 @@ module.exports = {
         },
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     {
