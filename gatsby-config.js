@@ -23,17 +23,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-      },
-    },
-    {
       resolve: "gatsby-source-wordpress",
       options: {
         // I have created a dummy site for us to use with the plugins we discussed
@@ -85,6 +74,20 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Lakers Creative`,
+        short_name: `Lakers Creative`,
+        description: `The application does cool things and makes your life better.`,
+        lang: `en`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#137ece`,
+        display: `standalone`,
+        icon: `./static/color-logo.png`,
+      },
+    },
     {
       resolve: `gatsby-plugin-offline`,
       options: {
