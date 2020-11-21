@@ -1,3 +1,1 @@
-exports.onInitialClientRender = () => {
-  console.log("ReactDOM.render has executed")
-}
+import "bootstrap/dist/css/bootstrap.min.css"

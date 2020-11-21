@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
 import Footer from "./Footer"
 import NavBar from "./NavBar"
-import "bootstrap/dist/css/bootstrap.min.css"
 import { Jumbotron } from "react-bootstrap"
 import layoutStyle from "./layout.module.scss"
 import { Helmet } from "react-helmet"
