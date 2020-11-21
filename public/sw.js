@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-f677be85c46826aaa801.js"
+    "url": "webpack-runtime-a839b93d685da8705523.js"
   },
   {
     "url": "framework-5a1b297d9adac74fe592.js"
   },
   {
-    "url": "app-b66f4d7cd6a5fb9f579b.js"
+    "url": "app-6ecdef3c929088bd2eeb.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "e4de5391ed91a0f1ff05acf761086236"
+    "revision": "d6dd4b2dbe6101bc5c94d0c1492a1094"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-47c8d8b7529f7a984452.js"
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "styles-e9d24b1846c7d6eb9685.js"
   },
   {
-    "url": "5bb228118c76f47f6bd4a2f730e2e10eb731d711-e1318733be4c8c3b8747.js"
+    "url": "5bb228118c76f47f6bd4a2f730e2e10eb731d711-21d92aa3ceda2274fc2b.js"
   },
   {
     "url": "component---src-pages-contact-js-022b9f7fe8695110a333.js"
@@ -63,7 +63,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "a9203f3c7d81eb8005a22ce5803e2639"
+    "revision": "24ac189a536dd33ef83c55d5ff8eaa3e"
   },
   {
     "url": "component---src-templates-blog-post-js-ca64616158ec14750774.js"
@@ -189,7 +189,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-b66f4d7cd6a5fb9f579b.js`))) {
+  if (!resources || !(await caches.match(`/app-6ecdef3c929088bd2eeb.js`))) {
     return await fetch(event.request)
   }
 
@@ -215,7 +215,7 @@ workbox.routing.registerRoute(/\/.gatsby-plugin-offline:.+/, handleAPIRequest)
 // show a notification after 15 seconds (the notification
 // permission must be granted first)
 setTimeout(() => {
-  self.registration.showNotification("Hello, world!")
+  self.registration.showNotification("Welcome to Lakers Creative")
 }, 15000)
 // register a custom navigation route
 const customRoute = new workbox.routing.NavigationRoute(({ event }) => {

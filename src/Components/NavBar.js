@@ -62,7 +62,7 @@ const NavBar = () => {
         </Navbar>
       </span>
       <span className="d-sm-block d-md-none">
-        <nav className={"navbar fixed-top navbar-dark bg-primary"}>
+        <nav className={"navbar fixed-top navbar-dark bg-primary shadow"}>
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="logo" height="30" width="30" />
           </Link>
