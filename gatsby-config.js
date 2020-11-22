@@ -25,11 +25,9 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        // I have created a dummy site for us to use with the plugins we discussed
         baseUrl: "blog.lakerscreative.com",
         protocol: "https",
         hostingWPCOM: false,
-        // We will be using some advanced custom fields
         useACF: true,
         acfOptionPageIds: [],
         verboseOutput: false,
@@ -94,6 +92,17 @@ module.exports = {
       options: {
         appendScript: require.resolve(`./src/custom-sw-code.js`),
         precachePages: [`/about-us/`, `/contact/`, `/blog/*`],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-F9E9776F48", // Google Analytics / GA
+          // "AW-CONVERSION_ID",  Google Ads / Adwords / AW
+          // "DC-FLOODIGHT_ID",  Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
       },
     },
   ],
