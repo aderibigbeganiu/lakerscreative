@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Footer from "./Footer"
 import NavBar from "./NavBar"
 import { Jumbotron } from "react-bootstrap"
@@ -7,9 +7,6 @@ import { Helmet } from "react-helmet"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const Layout = props => {
-  useEffect(() => {
-    document.title = `${props.name} · LakersCreative`
-  })
   return (
     <div className={layoutStyle.container}>
       <GatsbySeo
@@ -20,7 +17,7 @@ const Layout = props => {
         openGraph={{
           type: "website",
           url: `https://www.lakerscreative.com/${props.name}`,
-          title: ` ${props.name} LAKERS CREATIVE`,
+          title: `${props.name} LAKERS CREATIVE`,
           description: `${props.name}`,
           images: [
             {
@@ -31,6 +28,7 @@ const Layout = props => {
         }}
       />
       <Helmet>
+        <title>{`${props.name} · LakersCreative`}</title>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"

@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../Components/Layout"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import { Card, CardDeck } from "react-bootstrap"
 
 const Blog = () => {
   const data = useStaticQuery(graphql`
@@ -26,36 +25,32 @@ const Blog = () => {
   `)
   return (
     <Layout name="Blog">
-      {data.allWordpressPost.nodes.length >= 1 ? (
-        <CardDeck>
-          {data.allWordpressPost.nodes.map(post => (
-            <Card key={post.id}>
-              <Link
-                to={post.slug}
-                style={{ textDecoration: "none", color: "#000000" }}
-              >
-                <Card.Img
-                  variant="left"
-                  src={post.featured_media.source_url}
-                  height="150"
-                  width="100%"
-                />
-                <Card.Body>
-                  <Card.Title>{post.title}</Card.Title>
-                  <Card.Text>
-                    <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-                    <small>
-                      Written by {post.author.name} on {post.date}
-                    </small>
-                  </Card.Text>
-                </Card.Body>
-              </Link>
-            </Card>
-          ))}
-        </CardDeck>
-      ) : (
-        ""
-      )}
+      <ul class="list-unstyled">
+        {data.allWordpressPost.nodes.map(post => (
+          <Link
+            to={post.slug}
+            style={{ textDecoration: "none", color: "#000000" }}
+            key={post.id}
+          >
+            <li class="media">
+              <img
+                src={post.featured_media.source_url}
+                class="align-self-start mr-3"
+                alt={post.title}
+                height="100"
+                width="100"
+              />
+              <div class="media-body">
+                <h5 class="mt-0">{post.title}</h5>
+                <small>
+                  Written by {post.author.name} on {post.date}
+                </small>
+                <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+              </div>
+            </li>
+          </Link>
+        ))}
+      </ul>
     </Layout>
   )
 }

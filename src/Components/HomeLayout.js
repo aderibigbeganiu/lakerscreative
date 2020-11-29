@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Footer from "./Footer"
 import NavBar from "./NavBar"
 import { Button, Jumbotron } from "react-bootstrap"
@@ -8,9 +8,6 @@ import Helmet from "react-helmet"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const HomeLayout = props => {
-  useEffect(() => {
-    document.title = `${props.name} · LakersCreative`
-  })
   return (
     <div className={homeLayoutStyle.container}>
       <GatsbySeo
@@ -33,6 +30,7 @@ const HomeLayout = props => {
         }}
       />
       <Helmet>
+        <title>{`${props.name} · LakersCreative`}</title>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"

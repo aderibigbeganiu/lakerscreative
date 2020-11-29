@@ -11,7 +11,7 @@ const about = () => {
         the bedrock of Lakers Creative. Our operations officially started under
         the name Lakers creatives in the year 2020 when our company got
         registered with the CAC. Our primary goal is providing affordable
-        development strategies, general ICT services, and products, website and
+        development strategies, general ICT services and products, website and
         mobile app development, business branding, digital branding and
         marketing, software development, and training for individuals, groups,
         and organizations in Nigeria and around the world.
