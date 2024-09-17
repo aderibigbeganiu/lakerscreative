@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import ConstructionIcon from "./components/ConstructionIcon";
 
 function App() {
+  useEffect(() => {
+    document.title = "Under Construction - LakersCreative";
+  });
   return (
     <section className="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-900 p-4">
       <div className="flex flex-col items-center space-y-4">
