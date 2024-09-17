@@ -1,35 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ConstructionIcon from "./components/ConstructionIcon";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <section className="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-900 p-4">
+      <div className="flex flex-col items-center space-y-4">
+        <ConstructionIcon className="h-24 w-24 text-yellow-500 dark:text-yellow-300" />
+        <h1 className="text-3xl font-bold text-gray-700 dark:text-gray-300">
+          Under Construction
+        </h1>
+        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-md text-center">
+          This page is currently under construction. We're working hard to get
+          it ready for you. Stay tuned!
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </section>
+  );
 }
 
-export default App
+export default App;
